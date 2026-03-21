@@ -1,6 +1,12 @@
 {
 	"name": "ls_abs_msi_fs_dev_eastus_001",
 	"properties": {
+		"parameters": {
+			"ls_para_conn_string": {
+				"type": "string",
+				"defaultValue": "https://sreeheshblobstorage.blob.core.windows.net/"
+			}
+		},
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
