@@ -1,0 +1,9 @@
+{
+	"name": "DfSreehesh",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b944ccab-bfe2-46ce-9861-2219c5466f34",
+		"tenantId": "2449e4a9-a4c8-4946-8aa5-bc23195b1140"
+	}
+}
