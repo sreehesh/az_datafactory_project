@@ -10,7 +10,7 @@
 		"annotations": [],
 		"type": "AzureBlobStorage",
 		"typeProperties": {
-			"serviceEndpoint": "https://sreeheshblobstorage.blob.core.windows.net/",
+			"serviceEndpoint": "@{linkedService().ls_para_conn_string}",
 			"accountKind": "StorageV2"
 		}
 	}
