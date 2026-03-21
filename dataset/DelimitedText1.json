@@ -1,0 +1,39 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_abs_msi_fs_dev_eastus_001",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"ls_para_conn_string": "https://sreeheshblobstorage.blob.core.windows.net/"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "customer.csv.txt",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "customer_id",
+				"type": "String"
+			},
+			{
+				"name": " name",
+				"type": "String"
+			},
+			{
+				"name": " age",
+				"type": "String"
+			}
+		]
+	}
+}
