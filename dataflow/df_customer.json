@@ -36,7 +36,7 @@
 				"     validateSchema: false,",
 				"     ignoreNoFilesFound: false) ~> source1",
 				"source1 derive(dc_createDatetime = currentDate(),",
-				"          dcCreateBy = ERROR_FUNCTION('')) ~> dcCreateDateTime",
+				"          dcCreateBy = \"sree\") ~> dcCreateDateTime",
 				"dcCreateDateTime sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     skipDuplicateMapInputs: true,",
