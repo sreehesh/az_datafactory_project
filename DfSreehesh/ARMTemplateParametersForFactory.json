@@ -1,0 +1,12 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "DfSreehesh"
+		},
+		"ls_abs_msi_fs_dev_eastus_001_properties_typeProperties_serviceEndpoint": {
+			"value": "@{linkedService().ls_para_conn_string}"
+		}
+	}
+}
