@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "DelimitedText1",
+						"referenceName": "src_ds_customer_data_input",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "DelimitedText3",
+						"referenceName": "snk_customer_op",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
@@ -40,7 +40,14 @@
 				"dcCreateDateTime sink(allowSchemaDrift: true,",
 				"     validateSchema: false,",
 				"     skipDuplicateMapInputs: true,",
-				"     skipDuplicateMapOutputs: true) ~> sink1"
+				"     skipDuplicateMapOutputs: true,",
+				"     mapColumn(",
+				"          customer_id,",
+				"          { name},",
+				"          { age},",
+				"          dc_createDatetime,",
+				"          dcCreateBy",
+				"     )) ~> sink1"
 			]
 		}
 	}
